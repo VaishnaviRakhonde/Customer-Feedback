@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews | TECNO Digital Wave</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>Customer Reviews</h1>
+        <p>We value your feedback at <i class="fa-solid fa-chart-simple"></i> TECNO Digital Wave</p>
+    </header>
+    
+    <main>
+        <section class="review-form">
+            <h2>Submit Your Review</h2>
+            <form id="reviewForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="rating">Your Rating:</label>
+                <div class="stars">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+                </div>
+                <input type="hidden" id="rating" name="rating" required>
+
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" placeholder="Write your review here..." required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+
+        <section class="reviews-display">
+            <h2>Customer Feedback</h2>
+            <div id="reviewsContainer">
+                <!-- Customer reviews will be displayed here dynamically -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 <i class="fa-solid fa-chart-simple"></i> TECNO Digital Wave. All rights reserved.</p>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
+
+
